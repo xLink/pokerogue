@@ -26,7 +26,8 @@ export enum Setting {
   Player_Gender = "PLAYER_GENDER",
   Gamepad_Support = "GAMEPAD_SUPPORT",
   Touch_Controls = "TOUCH_CONTROLS",
-  Vibration = "VIBRATION"
+  Vibration = "VIBRATION",
+  PokeLink = "POKELINK"
 }
 
 export interface SettingOptions {
@@ -57,7 +58,8 @@ export const settingOptions: SettingOptions = {
   [Setting.Player_Gender]: [ 'Boy', 'Girl' ],
   [Setting.Gamepad_Support]: [ 'Auto', 'Disabled' ],
   [Setting.Touch_Controls]: [ 'Auto', 'Disabled' ],
-  [Setting.Vibration]: [ 'Auto', 'Disabled' ]
+  [Setting.Vibration]: [ 'Auto', 'Disabled' ],
+  [Setting.PokeLink]: [ 'Off', 'On' ]
 };
 
 export const settingDefaults: SettingDefaults = {
@@ -80,7 +82,8 @@ export const settingDefaults: SettingDefaults = {
   [Setting.Player_Gender]: 0,
   [Setting.Gamepad_Support]: 0,
   [Setting.Touch_Controls]: 0,
-  [Setting.Vibration]: 0
+  [Setting.Vibration]: 0,
+  [Setting.PokeLink]: 0
 };
 
 export const reloadSettings: Setting[] = [ Setting.UI_Theme, Setting.Language, Setting.Sprite_Set ];
